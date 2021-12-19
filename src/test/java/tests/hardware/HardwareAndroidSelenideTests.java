@@ -17,7 +17,7 @@ import static screens.ScreenSelectors.*;
 public class HardwareAndroidSelenideTests extends HardwareTestBase {
 
     @Test
-    @DisplayName("Successful search in wikipedia android app")
+    @DisplayName("Successful search in Wikipedia Android app")
     void searchTest() {
         back();
 
@@ -45,6 +45,10 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
     @Test
     @DisplayName("Second Screen")
     void checkSecondScreenTest() {
+        step("First screen go through", () -> {
+            $(MobileBy.id(onboardingForwardButton)).click();
+            sleep(1000);
+        });
         step("Second screen check", () -> {
             $(MobileBy.id(imageView)).isDisplayed();
             $(MobileBy.id(onboardingSkipButton)).isEnabled();
@@ -58,6 +62,14 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
     @Test
     @DisplayName("Third Screen")
     void checkThirdScreenTest() {
+        step("First screen go through", () -> {
+            $(MobileBy.id(onboardingForwardButton)).click();
+            sleep(1000);
+        });
+        step("Second screen go through", () -> {
+            $(MobileBy.id(onboardingForwardButton)).click();
+            sleep(1000);
+        });
         step("Third screen check", () -> {
             $(MobileBy.id(imageView)).isDisplayed();
             $(MobileBy.id(onboardingSkipButton)).isEnabled();
@@ -72,6 +84,18 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
     @Test
     @DisplayName("Fourth Screen")
     void checkFourthScreenTest() {
+        step("First screen go through", () -> {
+            $(MobileBy.id(onboardingForwardButton)).click();
+            sleep(1000);
+        });
+        step("Second screen go through", () -> {
+            $(MobileBy.id(onboardingForwardButton)).click();
+            sleep(1000);
+        });
+        step("Third screen go through", () -> {
+            $(MobileBy.id(onboardingForwardButton)).click();
+            sleep(1000);
+        });
         step("Fourth screen check", () -> {
             $(MobileBy.id(imageView)).isDisplayed();
             $(MobileBy.id(primaryTextView))

@@ -3,7 +3,7 @@ package screens;
 public class ScreenSelectors {
 
     public static String search = "org.wikipedia.alpha:id/search_src_text";
-    public static String searchResult = "org.wikipedia.alpha:id/page_list_item_container";
+    public static String searchResult = "org.wikipedia.alpha:id/page_list_item_title";
     public static String menuButton = "org.wikipedia.alpha:id/menu_overflow_button";
     public static String settingsButton = "org.wikipedia.alpha:id/explore_overflow_settings";
     public static String title = "android:id/title";
