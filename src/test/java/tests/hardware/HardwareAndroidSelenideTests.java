@@ -38,7 +38,6 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
                     .shouldHave(Condition.text("The Free Encyclopedia …in over 300 languages"));
             $(MobileBy.id(onboardingSkipButton)).isEnabled();
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
     }
 
@@ -47,7 +46,6 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
     void checkSecondScreenTest() {
         step("First screen go through", () -> {
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
         step("Second screen check", () -> {
             $(MobileBy.id(imageView)).isDisplayed();
@@ -55,7 +53,6 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
             $(MobileBy.id(primaryTextView))
                     .shouldHave(Condition.text("New ways to explore"));
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
     }
 
@@ -64,11 +61,9 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
     void checkThirdScreenTest() {
         step("First screen go through", () -> {
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
         step("Second screen go through", () -> {
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
         step("Third screen check", () -> {
             $(MobileBy.id(imageView)).isDisplayed();
@@ -77,7 +72,6 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
                     .shouldHave(Condition.text("Reading lists with sync"));
             $(MobileBy.id(imageView)).isDisplayed();
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
     }
 
@@ -86,15 +80,12 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
     void checkFourthScreenTest() {
         step("First screen go through", () -> {
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
         step("Second screen go through", () -> {
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
         step("Third screen go through", () -> {
             $(MobileBy.id(onboardingForwardButton)).click();
-            sleep(1000);
         });
         step("Fourth screen check", () -> {
             $(MobileBy.id(imageView)).isDisplayed();
@@ -104,7 +95,6 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
                     .shouldHave(Condition.text("Send usage data")).isEnabled();
             $(MobileBy.id(onboardingDoneButton))
                     .shouldHave(Condition.text("GET STARTED")).isEnabled();
-            sleep(1000);
         });
     }
 }
