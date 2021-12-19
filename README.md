@@ -59,25 +59,18 @@ Appium desktop runs tests on real device and we can see the device is under cont
 1. <a href="https://developer.android.com/studio">Download </a> Android Studio and install
 
 2. Set system path:
-
 * Windows:
 ```
 %ANDROID_HOME%\tools
-
 %ANDROID_HOME%\tools\bin
-
 %ANDROID_HOME%\platform-tools
 ```
-
 * Mac:
 ```
 $ANDROID_HOME/tools
-
 $ANDROID_HOME/tools/bin
-
 $ANDROID_HOME/platform-tools
 ```
-
 3. <a href="https://github.com/appium/appium-desktop">Download </a> Appium Desktop and install
 
 4. In Android Studio -> SDK Manager download Android 11
