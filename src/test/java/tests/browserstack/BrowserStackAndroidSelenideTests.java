@@ -11,16 +11,11 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static helpers.Tags.BROWSERSTACK;
 import static io.qameta.allure.Allure.step;
+import static screens.ScreenSelectors.*;
 
 
 @Tag(BROWSERSTACK)
 public class BrowserStackAndroidSelenideTests extends BrowserStackTestBase {
-
-    String search = "org.wikipedia.alpha:id/search_src_text";
-    String searchResult = "org.wikipedia.alpha:id/page_list_item_container";
-    String menuButton = "org.wikipedia.alpha:id/menu_overflow_button";
-    String settingsButton = "org.wikipedia.alpha:id/explore_overflow_settings";
-    String title = "android:id/title";
 
     @Test
     @DisplayName("Successful search in Wikipedia Android app")

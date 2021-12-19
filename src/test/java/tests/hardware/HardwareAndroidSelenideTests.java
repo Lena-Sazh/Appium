@@ -10,6 +10,7 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.*;
 import static helpers.Tags.HARDWARE;
 import static io.qameta.allure.Allure.step;
+import static screens.ScreenSelectors.*;
 
 
 @Tag(HARDWARE)
@@ -22,47 +23,62 @@ public class HardwareAndroidSelenideTests extends HardwareTestBase {
 
         step("Type search", () -> {
             $(MobileBy.AccessibilityId("Search Wikipedia")).click();
-            $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).val("BrowserStack");
+            $(MobileBy.id(search)).val("BrowserStack");
         });
         step("Verify content found", () ->
-                $$(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title"))
+                $$(MobileBy.id(searchResult))
                         .shouldHave(sizeGreaterThan(0)));
     }
 
     @Test
-    @DisplayName("Welcome screens")
-    void checkScreensTest() {
+    @DisplayName("First Screen")
+    void checkFirstScreenTest() {
         step("First screen check", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
+            $(MobileBy.id(primaryTextView))
                     .shouldHave(Condition.text("The Free Encyclopedia …in over 300 languages"));
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).isEnabled();
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+            $(MobileBy.id(onboardingSkipButton)).isEnabled();
+            $(MobileBy.id(onboardingForwardButton)).click();
             sleep(1000);
         });
+    }
+
+    @Test
+    @DisplayName("Second Screen")
+    void checkSecondScreenTest() {
         step("Second screen check", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/imageViewCentered")).isDisplayed();
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).isEnabled();
-            $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
+            $(MobileBy.id(imageView)).isDisplayed();
+            $(MobileBy.id(onboardingSkipButton)).isEnabled();
+            $(MobileBy.id(primaryTextView))
                     .shouldHave(Condition.text("New ways to explore"));
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+            $(MobileBy.id(onboardingForwardButton)).click();
             sleep(1000);
         });
-        step("Three screen check", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/imageViewCentered")).isDisplayed();
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).isEnabled();
-            $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
+    }
+
+    @Test
+    @DisplayName("Third Screen")
+    void checkThirdScreenTest() {
+        step("Third screen check", () -> {
+            $(MobileBy.id(imageView)).isDisplayed();
+            $(MobileBy.id(onboardingSkipButton)).isEnabled();
+            $(MobileBy.id(primaryTextView))
                     .shouldHave(Condition.text("Reading lists with sync"));
-            $(MobileBy.id("org.wikipedia.alpha:id/imageViewCentered")).isDisplayed();
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+            $(MobileBy.id(imageView)).isDisplayed();
+            $(MobileBy.id(onboardingForwardButton)).click();
             sleep(1000);
         });
+    }
+
+    @Test
+    @DisplayName("Fourth Screen")
+    void checkFourthScreenTest() {
         step("Fourth screen check", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/imageViewCentered")).isDisplayed();
-            $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
+            $(MobileBy.id(imageView)).isDisplayed();
+            $(MobileBy.id(primaryTextView))
                     .shouldHave(Condition.text("Send anonymous data"));
-            $(MobileBy.id("org.wikipedia.alpha:id/switchView"))
+            $(MobileBy.id(switchView))
                     .shouldHave(Condition.text("Send usage data")).isEnabled();
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_done_button"))
+            $(MobileBy.id(onboardingDoneButton))
                     .shouldHave(Condition.text("GET STARTED")).isEnabled();
             sleep(1000);
         });
