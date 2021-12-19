@@ -5,7 +5,7 @@ ___
 ### Simple mobile tests for [Wikipedia Android App](https://www.wikipedia.org/)
 
 
-## :hammer_and_wrench: Project stack
+### :hammer_and_wrench: Project stack
 
 <code><img height="50" title="Java" src="https://github.com/Lena-Sazh/Lena-Sazh/blob/main/src/test/resources/logo/Java.svg"></code>
 <code><img height="50" title="JUnit 5" src="https://github.com/Lena-Sazh/Lena-Sazh/blob/main/src/test/resources/logo/JUnit5.svg"></code>
@@ -40,7 +40,9 @@ gradle clean task browserstack_android -DdeviceHost=browserstack
 ```
 ___
 
-#### :ballot_box_with_check: System setup:
+
+
+### :ballot_box_with_check: System setup
 
 1. <a href="https://developer.android.com/studio">Download </a> Android Studio and install
 
