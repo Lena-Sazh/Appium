@@ -2,7 +2,7 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:hardware.properties"})
+@Config.Sources({"classpath:${deviceHost}.properties"})
 public interface HardwareConfig extends Config {
 
     @Key("url")

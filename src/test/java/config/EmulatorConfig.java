@@ -2,7 +2,7 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:emulator.properties"})
+@Config.Sources({"classpath:${deviceHost}.properties"})
 public interface EmulatorConfig extends Config {
 
     @Key("url")
