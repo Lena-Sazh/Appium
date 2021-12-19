@@ -1,7 +1,7 @@
 package tests.emulator;
 
 import com.codeborne.selenide.Configuration;
-import drivers.HardwareMobileDriver;
+import drivers.EmulatorMobileDriver;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -18,7 +18,7 @@ public class EmulatorTestBase {
     public static void setup() {
         addListener("AllureSelenide", new AllureSelenide());
 
-        Configuration.browser = HardwareMobileDriver.class.getName();
+        Configuration.browser = EmulatorMobileDriver.class.getName();
         Configuration.startMaximized = false;
         Configuration.browserSize = null;
         Configuration.timeout = 10000;
