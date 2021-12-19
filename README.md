@@ -75,7 +75,7 @@ $ANDROID_HOME/platform-tools
 
 4. In Android Studio -> SDK Manager download Android 11
 
-5. In AVD Manager download Pixel 4 for Android 11
+5. In Android Studio -> AVD Manager download Pixel 4 for Android 11
 
 6. Start server session in Appium Desktop and create connection to emulator by passing capabilities
 ```
