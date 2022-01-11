@@ -1,6 +1,6 @@
 <p align="right">
-<a href="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=Lena-sazh.Rest-Assured&color=8900FF&style=plastic&logo=Github&text=Hello_Visitors!">
-  <img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=Lena-sazh.Rest-Assured&color=8900FF&style=plastic&logo=Github&text=Hello_Visitors!"/>
+<a href="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=Lena-sazh.Appium&color=8900FF&style=plastic&logo=Github&text=Hello_Visitors!">
+  <img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=Lena-sazh.Appium&color=8900FF&style=plastic&logo=Github&text=Hello_Visitors!"/>
 </a>
 </p>
 
