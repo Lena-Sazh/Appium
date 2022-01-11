@@ -16,7 +16,7 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
     public static BrowserStackConfig config = ConfigFactory.create(BrowserStackConfig.class);
 
     static String url = config.url();
-    static String user = config.name();
+    static String user = config.user();
     static String key = config.key();
     static String app = config.app();
     static String device = config.device();

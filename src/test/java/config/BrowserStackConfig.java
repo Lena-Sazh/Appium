@@ -12,7 +12,7 @@ public interface BrowserStackConfig extends Config {
     String session();
 
     @Key("user")
-    String name();
+    String user();
 
     @Key("key")
     String key();

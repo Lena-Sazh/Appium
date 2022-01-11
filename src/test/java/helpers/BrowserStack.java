@@ -9,7 +9,7 @@ public class BrowserStack {
     public static String videoUrl(String sessionId) {
         BrowserStackConfig config = ConfigFactory.create(BrowserStackConfig.class);
 
-        String login = config.name();
+        String login = config.user();
         String pass = config.key();
         String session = config.session();
 
