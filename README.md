@@ -50,15 +50,15 @@ ___
 
 Appium desktop runs tests on device emulator
 
-![Appium Inspector](https://github.com/Lena-Sazh/Appium/blob/master/src/test/resources/img/AppiumInspector.png)
-![Emulator Test](https://github.com/Lena-Sazh/Appium/blob/master/src/test/resources/img/EmulatorTest.png)
+![Appium Inspector](img/AppiumInspector.png)
+![Emulator Test](img/EmulatorTest.png)
 
 ### :camera_flash: Test on real device
 
 Appium desktop runs tests on real device and we can see the device is under control by Appium Settings App
 
-<code><img height="600" title="Real device Test" src="https://github.com/Lena-Sazh/Appium/blob/master/src/test/resources/img/HardwareTest2.jpg"></code>
-<code><img height="600" title="Real device Test" src="https://github.com/Lena-Sazh/Appium/blob/master/src/test/resources/img/HardwareTest.jpg"></code>
+<code><img height="600" title="Real device Test" src="https://github.com/Lena-Sazh/Appium/blob/master/img/HardwareTest2.jpg"></code>
+<code><img height="600" title="Real device Test" src="https://github.com/Lena-Sazh/Appium/blob/master/img/HardwareTest.jpg"></code>
 
 ### :ballot_box_with_check: System setup
 
