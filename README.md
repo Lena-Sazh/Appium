@@ -4,8 +4,8 @@
 </a>
 </p>
 
-### QA Guru / HW №22
-#### Mobile test automation examples with Appium
+#### QA Guru / HW №22
+### Mobile test automation examples with Appium
 ___
 
 ### Simple mobile tests for [Wikipedia Android App](https://www.wikipedia.org/)
